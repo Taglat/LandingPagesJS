@@ -1,0 +1,22 @@
+body {
+  position: relative;
+  height: 100svh;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  font-family: "", sans-serif;
+  color: $color-text;
+  background-color: $color-bg;
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+[class*="__container"] {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
