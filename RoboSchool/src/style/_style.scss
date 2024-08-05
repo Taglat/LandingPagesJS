@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Jost:regular,600,700);
+
 body {
   position: relative;
   height: 100svh;
@@ -5,9 +7,9 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
 
-  font-family: "", sans-serif;
+  font-family: "Jost", sans-serif;
   color: $color-text;
-  background-color: $color-bg;
+  background-color: $color-bg-inv;
 }
 
 body._lock {
