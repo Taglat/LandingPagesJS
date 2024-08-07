@@ -13,7 +13,8 @@
   z-index: 1;
   
   @include mobile {
-    justify-content: flex-start
+    justify-content: flex-start;
+    padding: 30px 10px;
   }
 
   &__logo {}
@@ -174,6 +175,7 @@
     font-weight: 400;
     transition: outline .3s ease;
     position: relative;
+    cursor: pointer;
 
     @include tablet {
       font-size: rem(16);

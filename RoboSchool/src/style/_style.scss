@@ -9,7 +9,7 @@ body {
 
   font-family: "Jost", sans-serif;
   color: $color-text;
-  background-color: $color-bg-inv;
+  background-color: $color-bg;
 }
 
 body._lock {
@@ -17,8 +17,16 @@ body._lock {
 }
 
 [class*="__container"] {
-  max-width: 1280px;
+  max-width: 1190px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  
+  @include mobile {
+  }
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
