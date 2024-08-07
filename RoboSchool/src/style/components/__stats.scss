@@ -1,0 +1,61 @@
+.stats {
+  padding: 120px 0;
+  background-color: #F9F9F9;
+
+  @include mobile {
+    padding: 60px 0;
+  }
+
+  &__container {
+
+  }
+
+  &__title {
+    font-size: rem(30);
+    line-height: 160%;
+
+    max-width: 890px;
+    margin-bottom: 60px;
+
+    @include mobile {
+      font-size: rem(20);
+      padding: 40px 0;
+    }
+
+    & span {
+      font-weight: 600;
+    }
+  }
+
+  &__info {
+  }
+}
+.stats-info {
+  display: flex;
+  justify-content: space-between;
+
+  @include mobile {
+    flex-direction: column;
+  }
+  &__item {
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__number {
+    font-size: rem(70);
+    font-weight: 600;
+    line-height: 160%;
+    color: $color-btn;
+
+    @include mobile {
+      font-size: rem(60);
+    }
+  }
+
+  &__text {
+    font-size: rem(16);
+    line-height: 160%;
+  }
+}
