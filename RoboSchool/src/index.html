@@ -10,9 +10,9 @@
         <a class="header__logo logo">ROBO.SCHOOL</a>
         <nav class="header__nav nav">
             <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link">О школе</a></li>
-                <li class="nav__item"><a class="nav__link">Тренеры</a></li>
-                <li class="nav__item"><a class="nav__link">Стоимость</a></li>
+                <li class="nav__item"><a class="nav__link" href="#stats">О школе</a></li>
+                <li class="nav__item"><a class="nav__link" href="#treners">Тренеры</a></li>
+                <li class="nav__item"><a class="nav__link" href="#price">Стоимость</a></li>
             </ul>
         </nav>
         <div class="header__item-border number">
@@ -44,7 +44,7 @@
                 <div class="hero__decor"></div>
             </div>            
         </section>
-        <section class="stats">
+        <section class="stats" id="stats">
             <div class="stats__container">
                 <div class="stats__title"><span>Robo School</span> – учреждение для формирования кадрового педагогического резерва в сфере робототехникии программирования</div>
                 <div class="stats__info stats-info">
@@ -100,7 +100,7 @@
             </div>
             
         </section>
-        <section class="treners">
+        <section class="treners" id="treners">
             <div class="treners__container">
                 <h2 class="section__title treners__title">Профессиональные тренеры</h2>
                 <div class="swiper-container trenersSwiper">
@@ -160,10 +160,10 @@
                   </div>
             </div>
         </section>
-        <section class="packs">
-            <div class="packs__container">
-                <h2 class="section__title packs__title">Выберите нужный пакет</h2>
-                <div class="packs__cards">
+        <section class="price" id="price">
+            <div class="price__container">
+                <h2 class="section__title price__title">Выберите нужный пакет</h2>
+                <div class="price__cards">
                     <div class="card">
                         <h3 class="card__title">– PRO –</h3>
                         <h3 class="card__price">20.000 ₽</h3>
@@ -186,6 +186,31 @@
 
             </div>
         </section>
+        <section class="contact">
+            <div class="contact__container">
+                <div class="contact__info">
+                    <h2 class="contact__title">Запишитесь на курс со скидкой 10%</h2>
+                    <p class="contact__subtitle">Акция действительна до 10 марта 2022 года</p>
+                </div>
+                <form class="contact__form">
+                    <input type="text" placeholder="Имя" class="contact__input">
+                    <input type="number" placeholder="Телефон" class="contact__input">
+                    <input type="email" placeholder="E-mail" class="contact__input">
+                    <button class="contact__btn btn">Оформить заявку</button>
+                </form>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__left">
+                <a class="footer__logo logo">ROBO.SCHOOL</a>
+                <p class="footer__varanty">© ROBO.SCHOOL</p>
+            </div>
+            <div class="footer__right">
+                <a href="tel:+78000001122" class="footer__number">+7 800 000 11 22</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

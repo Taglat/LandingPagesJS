@@ -1,0 +1,80 @@
+.contact {
+  color: $color-text-inv;
+  background: $color-btn;
+  padding: 85px 0;
+
+  @include mobile {
+    padding: 40px 0;
+  }
+  &__container {
+    display: flex;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
+  &__info {
+    flex: 0 1 50%;
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-size: rem(36);
+    line-height: 130%;
+    font-weight: 600;
+    margin-bottom: 20px;
+    max-width: 476px;
+
+    @include mobile {
+      font-size: rem(30);
+      max-width: 300px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  &__subtitle {
+    font-size: rem(20);
+    line-height: 130%;
+    font-weight: 400;
+
+    @include mobile {
+      font-size: rem(16);
+    }
+  }
+
+  &__form {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @include mobile {
+      align-items: center;
+    }
+  }
+
+  &__input {
+    font-size: rem(18);
+    color: $color-text;
+    margin-bottom: 10px;
+    background-color: $color-bg;
+    border: 0;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  &__btn {
+    background-color: $color-bg-inv !important;
+    color: $color-text-inv;
+    width: 100% !important;
+    max-width: 500px !important;
+  }
+}
+.btn {
+}

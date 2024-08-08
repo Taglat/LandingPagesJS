@@ -1,10 +1,21 @@
 .treners {
   overflow-x: hidden;
   padding: 120px 0;
+
+  @include mobile {
+    padding: 60px 0;
+  }
   &__container {
+
+    @include mobile {
+      text-align: center;
+    }
   }
   &__title {
     margin-bottom: 60px;
+    @include mobile {
+      margin-bottom: 40px;
+    }
   }
 }
 

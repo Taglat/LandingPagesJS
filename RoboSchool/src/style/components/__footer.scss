@@ -1,0 +1,43 @@
+.footer {
+  background-color: $color-bg-inv;
+  color: $color-text-inv;
+  padding: 40px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    @include mobile {
+      gap: 20px;
+    }
+  }
+
+  &__logo {
+    line-height: 160%;
+  }
+
+  &__varanty {
+    color: #777;
+  }
+
+  &__right {
+  }
+
+  &__number {
+    font-size: rem(30);
+    font-weight: 600;
+    line-height: 160%;
+    color: $color-text-inv;
+    text-decoration: none;
+  }
+}

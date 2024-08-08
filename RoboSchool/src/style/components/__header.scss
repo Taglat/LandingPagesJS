@@ -175,6 +175,8 @@
     font-weight: 400;
     transition: outline .3s ease;
     position: relative;
+    color: $color-text-inv;
+    text-decoration: none;
     cursor: pointer;
 
     @include tablet {
