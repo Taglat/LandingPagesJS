@@ -8,8 +8,8 @@ body {
   position: relative;
   height: 100svh;
 
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  display: flex;
+  flex-direction: column;
 
   font-family: "Jost", sans-serif;
   color: $color-text;
