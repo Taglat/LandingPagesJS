@@ -8,8 +8,7 @@ import 'swiper/css/pagination';
 export const trenersSwiper = new Swiper('.trenersSwiper', {
   // configure Swiper to use modules
   modules: [Navigation, Pagination],
-  slidesPerView: 3,
-  spaceBetween: 30,
+  
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
@@ -19,4 +18,20 @@ export const trenersSwiper = new Swiper('.trenersSwiper', {
     el: '.swiper-progress-bar',
     type: "progressbar",
   },
+  breakpoints: {
+    300: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+
+    },
+    500: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+
+    },
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    }
+},
 });
